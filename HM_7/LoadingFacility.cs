@@ -1,6 +1,6 @@
 ﻿namespace HM_7;
 
-public class Queue_Stack<T>
+public class LoadingFacility<T>
 {
    Queue<T> items = new Queue<T>();
 
