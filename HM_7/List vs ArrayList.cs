@@ -13,6 +13,8 @@ public class List_vs_ArrayList
         TestList();
         Console.ReadKey();
     }
+    
+    
 
     private void TestArrayList()
     {

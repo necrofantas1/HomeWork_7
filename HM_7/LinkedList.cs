@@ -1,4 +1,6 @@
 ﻿namespace HM_7;
+using HM_7.Exeptions;
+
 
 public class LinkedList
 {
@@ -25,7 +27,7 @@ public class LinkedList
 
         if (node == null)
         {
-            throw new NodeNotFoundException();
+            throw new NodeNotFoundExсeption();
         }
     }
     
@@ -38,11 +40,6 @@ public class LinkedList
     }
 }
 
-
-public class NodeNotFoundException : Exception
-{
-    public NodeNotFoundException() => Console.WriteLine("Node not found");
-}
 
 
 

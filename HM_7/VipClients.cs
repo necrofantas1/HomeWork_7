@@ -1,33 +1,7 @@
-﻿namespace HM_7;
-
-public class ItemsCatalog
-{
-    Dictionary<int, string> itemsCatalog = new Dictionary<int, string>();
-
-    public void AddItem(int barcode, string name)
-    {
-        if (!itemsCatalog.ContainsKey(barcode))
-        {
-            itemsCatalog.Add(barcode, name);
-        }
-
-        else
-        {
-            Console.WriteLine("Item already exists");
-        }
-
-    }
-
-    public string? GetItem(int barcode)
-    {
-        itemsCatalog.TryGetValue(barcode, out string? name);
-        return name;
-    }
-}
+namespace HM_7;
 
 public class VipClients
-    {
-
+{
         SortedList<int, string> vipClients = new SortedList<int, string>();
         
         public void AddVIPClient(int clientID, string name)
@@ -47,7 +21,5 @@ public class VipClients
             {
                 Console.WriteLine($"ID: {vipClients.Keys[i]} — {vipClients.Values[i]}");
             }
-        }
     }
-
-    
+}
